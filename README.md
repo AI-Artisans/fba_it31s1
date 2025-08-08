@@ -1,7 +1,7 @@
 # 🧠💾 Fundamentals of Bus Analytics Repository (a.k.a. The Labyrinth of Data Madness)
 
 Welcome, brave 3rd Year IT student of TIP!  
-You have stumbled into the **official** (and questionably organized) realm of **Big Data Analysis** lab work. 🎉
+You have stumbled into the **official** (and questionably organized) realm of **Fundamentals of Bus Analytics** lab work. 🎉
 
 This repo is your new best friend (until finals), containing:
 
