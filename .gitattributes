@@ -19,7 +19,7 @@
 *.md     text
 *.txt    text
 *.xml    text
-*.arff   text
+*.arff   binary
 *.sh     text eol=lf
 *.py     text eol=lf
 *.php    text eol=lf
