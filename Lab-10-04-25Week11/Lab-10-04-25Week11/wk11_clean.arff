@@ -1,0 +1,32 @@
+@RELATION wk11_dataset
+@ATTRIBUTE unique_id string
+@ATTRIBUTE channel_name string
+@ATTRIBUTE category string
+@ATTRIBUTE sub_category string
+@ATTRIBUTE customer_remarks string
+@ATTRIBUTE order_id string
+@ATTRIBUTE order_date_time string
+@ATTRIBUTE issue_reported_at string
+@ATTRIBUTE issue_responded string
+@ATTRIBUTE survey_response_date string
+@ATTRIBUTE customer_city string
+@ATTRIBUTE product_category string
+@ATTRIBUTE item_price string
+@ATTRIBUTE connected_handling_time string
+@ATTRIBUTE agent_name string
+@ATTRIBUTE supervisor string
+@ATTRIBUTE manager string
+@ATTRIBUTE tenure_bucket string
+@ATTRIBUTE agent_shift string
+@ATTRIBUTE csat_score {Yes,No}
+@DATA
+"001","Email","Electronics","Mobile","Late delivery","ORD123","2024-05-01 10:00","2024-05-01 09:30","2024-05-02 11:00","2024-05-03","Manila","Smartphone","599","00:12:34","John Doe","Jane Smith","Michael Tan","1-2 years","Morning","Yes"
+"002","Chat","Fashion","Shoes","Missing size","ORD124","2024-05-02 14:10","2024-05-02 13:55","2024-05-03 15:20","2024-05-04","Cebu","Footwear","799","00:10:18","Alice Lee","David Cruz","Michael Tan","<1 year","Evening","No"
+"003","Phone","Appliances","Refrigerator","Broken handle","ORD125","2024-05-03 09:15","2024-05-03 09:00","2024-05-04 10:00","2024-05-05","Davao","Home Appliance","1599","00:09:45","Carlos Reyes","Jane Smith","Michael Tan","3-4 years","Morning","Yes"
+"004","Email","Electronics","Laptop","Slow response","ORD126","2024-05-04 11:25","2024-05-04 10:55","2024-05-05 12:20","2024-05-06","Manila","Computer","35999","00:15:10","John Doe","Jane Smith","Michael Tan","1-2 years","Evening","No"
+"005","Chat","Beauty","Skincare","Excellent service","ORD127","2024-05-05 15:00","2024-05-05 14:30","2024-05-06 16:00","2024-05-07","Cebu","Cosmetics","499","00:08:22","Alice Lee","David Cruz","Michael Tan","<1 year","Morning","Yes"
+"006","Phone","Fashion","Accessories","Late update","ORD128","2024-05-06 09:30","2024-05-06 09:00","2024-05-07 10:15","2024-05-08","Manila","Jewelry","999","00:11:40","Carlos Reyes","Jane Smith","Michael Tan","3-4 years","Evening","No"
+"007","Email","Electronics","Tablet","Great assistance","ORD129","2024-05-07 13:20","2024-05-07 13:00","2024-05-08 14:30","2024-05-09","Davao","Gadget","12999","00:07:12","John Doe","Jane Smith","Michael Tan","1-2 years","Morning","Yes"
+"008","Chat","Fashion","Bags","Incorrect color","ORD130","2024-05-08 10:45","2024-05-08 10:20","2024-05-09 11:50","2024-05-10","Cebu","Handbag","899","00:10:55","Alice Lee","David Cruz","Michael Tan","<1 year","Evening","No"
+"009","Phone","Appliances","Microwave","Satisfied customer","ORD131","2024-05-09 08:30","2024-05-09 08:00","2024-05-10 09:45","2024-05-11","Manila","Kitchen Appliance","2999","00:09:00","Carlos Reyes","Jane Smith","Michael Tan","3-4 years","Morning","Yes"
+"010","Email","Electronics","Camera","Faulty lens","ORD132","2024-05-10 14:00","2024-05-10 13:30","2024-05-11 15:20","2024-05-12","Davao","Photography","10999","00:13:25","John Doe","Jane Smith","Michael Tan","1-2 years","Evening","No"

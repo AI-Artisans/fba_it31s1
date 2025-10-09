@@ -1,0 +1,22 @@
+@RELATION wk11_dataset
+@ATTRIBUTE unique_id STRING
+@ATTRIBUTE channel_name STRING
+@ATTRIBUTE category STRING
+@ATTRIBUTE sub_category STRING
+@ATTRIBUTE customer_remarks STRING
+@ATTRIBUTE order_id STRING
+@ATTRIBUTE order_date_time STRING
+@ATTRIBUTE issue_reported_at STRING
+@ATTRIBUTE issue_responded STRING
+@ATTRIBUTE survey_response_date STRING
+@ATTRIBUTE customer_city STRING
+@ATTRIBUTE product_category STRING
+@ATTRIBUTE item_price STRING
+@ATTRIBUTE connected_handling_time STRING
+@ATTRIBUTE agent_name STRING
+@ATTRIBUTE supervisor STRING
+@ATTRIBUTE manager STRING
+@ATTRIBUTE tenure_bucket STRING
+@ATTRIBUTE agent_shift STRING
+@ATTRIBUTE csat_score STRING
+@DATA
