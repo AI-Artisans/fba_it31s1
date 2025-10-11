@@ -1,122 +1,153 @@
-# 🧠💾 Fundamentals of Bus Analytics Repository (a.k.a. The Labyrinth of Data Madness)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic and Responsive Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            overflow-x: hidden;
+            animation: gradient 5s ease infinite;
+            background-size: 400% 400%;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1f2f3f;
+            padding: 15px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+        .section:nth-child(odd) {
+            animation-delay: 1s;
+        }
+        .section:nth-child(even) {
+            animation-delay: 1.5s;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards 2s;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
 
-Welcome, brave 3rd Year IT student of TIP!  
-You have stumbled into the **official** (and questionably organized) realm of **Big Data Analysis** lab work. 🎉
+<header>
+    <h1>Fundamentals of Bus Analytics</h1>
+</header>
 
-This repo is your new best friend (until finals), containing:
+<nav>
+    <a href="#section1">Group 1</a>
+    <a href="#section2">Group 2</a>
+    <a href="#section3">Group 3</a>
+	<a href="#section4">Group 4</a>
+	<a href="#section5">Group 5</a>
+</nav>
 
-- 📁 Laboratory exercise submissions (aka your ticket to passing)
-- 📚 Supporting documents (some useful, some ancient scrolls)
-- 🧪 Bonus brain cells (not guaranteed)
+<div class="container">
+    <div id="section1" class="section">
+        <h2 style="color: #2980b9;">Group 1</h2>
+        <p>This is the first section of the webpage.</p>
+    </div>
+    <div id="section2" class="section">
+        <h2 style="color: #27ae60;">Group 2</h2>
+        <p>This is the second section of the webpage.</p>
+    </div>
+    <div id="section3" class="section">
+        <h2 style="color: #c0392b;">Group 3</h2>
+        <p>This is the third section of the webpage.</p>
+    </div>
+    <div id="section4" class="section">
+        <h2 style="color: #c0392b;">Group 4</h2>
+        <p>This is the third section of the webpage.</p>
+    </div>
+    <div id="section5" class="section">
+        <h2 style="color: #c0392b;">Group 5</h2>
+        <p>This is the third section of the webpage.</p>
+    </div>
+</div>
 
----
+<footer>
+    <p>© 2025 SIA-02. All rights reserved.</p>
+</footer>
 
-## 🧪 What Is This Sorcery?
+<script>
+    $(document).ready(function() {
+        $('nav a').click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500);
+        });
+    });
+</script>
 
-This repository is where you'll dump—err, **submit**—your precious lab exercises for the semester. Think of it as your digital lab notebook, minus the coffee stains.
-
-We’ll be wrangling data so big, it could crash your laptop.  
-But hey, that’s what makes it fun. Right? Right?!
-
----
-
-## 📂 Folder Structure (Probably)
-
-Everything is neatly tucked away using a meticulous directory structure because...we’re professionals like that:
-
-### Directory Structure
-📂 https://github.com/AI-Artisans/fba_it31s1 <br>
-&nbsp;&nbsp;&nbsp;|- 📂 Main&nbsp;&nbsp;<span style="color:#C2C0C0"><i>&lt;-- branch</i></span><br>
-&nbsp;&nbsp;&nbsp;|- 📂 [Name in LastNameFNMI]&nbsp;&nbsp;<span style="color:#C2C0C0"><i>&lt;-- branch</i></span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- 📂 LAB-[LaboratoryDate: yyyymmdd]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- 📂 final-project<br>
-&nbsp;&nbsp;&nbsp;|- 📂 Tags<br>
-
-### Example:
-📂 https://github.com/AI-Artisans/fba_it31s1 <br>
-&nbsp;&nbsp;&nbsp;|- 📂 Main<br>
-&nbsp;&nbsp;&nbsp;|- 📂 DelaCruzJTI<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- 📂 LAB-20250809<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- 📂 final-project<br>
-
-### Naming Conventions:
-1. Each student must create their own GitHub branch using the naming convention:
-   **[Last Name][First Name Initial][Middle Initial]**
-   _(E.g., `DelaCruzJTI` for Juan Tamad Inantok Dela Cruz)._
-
-2. **Laboratory Submissions**:
-   - Inside your branch, create a new folder for each laboratory session with the format:
-     **`LAB-[yyyymmdd]`**
-     _(E.g., `LAB-20250809` for the lab session on August 9, 2025)._
-
-3. **Final Project Submission**:
-   - Your final project should be added inside the `final-project/` folder within your branch. 
-   - Use a separate branch name for project submission, as instructed later in the course.
-
-Note: Folder names subject to change due to panic, typos, or last-minute professor updates. 😅
-
----
-
-### 🛠️ How To Contribute (Because Sharing is Scaring)
-
-#### 🧙‍♂️ Welcome to the FBA-IT31S1 Chaosverse!  
-
-Because sharing isn’t just caring — it’s mildly terrifying and may involve summoning Git demons. If you’re reading this, congratulations: you’ve chosen the path of bravery (or confusion). Either way, here’s your scroll of instructions to enter the sacred realm of contribution.
-
-First, you must **clone** the sacred code to your lair — this is the digital equivalent of stealing a spellbook and promising to return it:  
-`git clone https://github.com/AI-Artisans/fba_it31s1.git`
-
-Then, **spy on the remote branches**, because knowing is half the battle (the other half is debugging):  
-`git branch -r`
-
-Next, **switch to the MatangSisiw branch**, the all-seeing chick that holds all truth (and code):  
-`git switch origin/MatangSisiw`  
-*If your Git throws a tantrum and refuses to switch like a moody teenager, try:*  
-`git checkout origin/MatangSisiw`
-
-Once inside the nest, **pull the latest changes** — freshly hatched updates await:  
-`git pull origin/MatangSisiw`
-
-Now it’s time to **check your status** like a sneaky ninja monitoring footprints in the sand:  
-`git status`
-
-Then, bravely **stage all your changes**, even the ones you forgot existed:  
-`git add .`
-
-Now comes the sacred ritual of **commitment** — declare your intentions to the Git gods (and future devs):  
-`git commit -m "Trying to send my nothing-ness."`
-
-Finally, **push it to the branch** and pray the CI/CD spirits are in your favor:  
-`git push origin/MatangSisiw`
-
-🎉 You’ve done it! You’ve contributed to the Madness. Take a break, drink some water, write your autobiography, or stare into the void while questioning life choices. And remember:
-
-_"With great Git comes great commit messages."_  
-🪄 *Made with typos, hope, and caffeine.*
-
----
-
-## 📜 Rules of the Repo (aka the Fine Print)
-
-- ☑️ Submit your own work (your cat can’t code, we checked)
-- ☑️ Respect deadlines (time waits for no coder)
-- ☑️ Use meaningful commit messages (e.g., `fixed lab 2` = meh, `exorcised bugs from lab 2` = chef’s kiss)
-- ☑️ No pushing to `main` unless you’ve been granted the sacred powers
-
----
-
-## 👩‍🏫 Professor Says
-
-> "Git good, or git rekt."  
-> — Someone, probably
-
----
-
-## 🧠 Need Help?
-
-Create an issue or send memes. We’re not saying memes will solve your problem, but they might.
-
----
-
-Happy analyzing, data ninjas! 🎓💻📊  
-Now go forth and make data scream for mercy.
+</body>
+</html>
